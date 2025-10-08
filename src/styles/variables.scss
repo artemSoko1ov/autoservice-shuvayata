@@ -1,0 +1,29 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-dark: #1c1c1c;
+  --color-orange: #e06724;
+  --color-gray: #5f5f5f;
+
+  --liner-gradient: linear-gradient(
+    180deg,
+    #1c1c1c 0%,
+    rgba(28, 28, 28, 0.4) 100%
+  );
+
+  --border-bottom: 1px solid var(--color-orange);
+  --border-radius-m: 4px;
+
+  --font-family-base: "Montserrat", sans-serif;
+
+  --container-padding-x: 16px;
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+
+  --section-padding-y: #{fluid(150, 90)};
+
+  --transition-duration: 0.2s;
+}

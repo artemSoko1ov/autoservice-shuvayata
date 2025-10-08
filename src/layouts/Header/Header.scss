@@ -1,0 +1,26 @@
+.header {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition-duration: var(--transition-duration);
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0 400px;
+
+  &__logo,
+  &__logo-image {
+    height: fluid(120, 80);
+  }
+
+  @keyframes scrolling-header {
+    to {
+      padding-block: 5px;
+      background-color: var(--color-dark);
+    }
+  }
+}

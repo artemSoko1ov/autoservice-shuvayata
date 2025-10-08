@@ -1,7 +1,12 @@
 import "@/styles/";
+import Header from "./layouts/Header";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;

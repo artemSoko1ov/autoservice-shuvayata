@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scrollbar-gutter: auto;
 
@@ -14,6 +20,7 @@ body {
   font-family: var(--font-family-base), sans-serif;
   color: var(--color-white);
   background-color: var(--color-dark);
+  overflow-x: hidden;
 }
 
 main {
@@ -67,4 +74,8 @@ svg * {
 
 :focus-visible {
   @include focus-visible;
+}
+
+section {
+  border-bottom: var(--border-bottom);
 }

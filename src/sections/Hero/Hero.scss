@@ -1,0 +1,35 @@
+.hero {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background-image:
+    var(--liner-gradient), url("../../assets/images/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__body {
+    max-width: 888px;
+    padding: fluid(53, 20) fluid(72, 30) fluid(82, 35) fluid(72, 30);
+    border-radius: var(--border-radius-l);
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(50, 35);
+  }
+
+  &__description {
+    @include fluid-text(28, 16);
+  }
+}

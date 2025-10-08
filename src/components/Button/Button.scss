@@ -1,0 +1,9 @@
+.button {
+  @include fluid-text(18, 16);
+
+  background-color: var(--color-orange);
+  padding: fluid(15, 10) fluid(40, 30);
+  border-radius: var(--border-radius-l);
+  color: var(--color-white);
+  text-decoration: none;
+}

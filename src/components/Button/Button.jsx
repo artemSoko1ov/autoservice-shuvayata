@@ -3,10 +3,7 @@ import "./Button.scss";
 const Button = (props) => {
   const {} = props;
   return (
-    <a
-      href="/"
-      className="button"
-    >
+    <a href="/" className="button">
       <p>Записаться</p>
     </a>
   );

@@ -1,3 +1,3 @@
-import CardSlider from './CardSlider'
+import CardSlider from "./CardSlider";
 
-export default CardSlider
+export default CardSlider;

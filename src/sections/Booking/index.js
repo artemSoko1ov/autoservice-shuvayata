@@ -1,3 +1,3 @@
-import Booking from './Booking'
+import Booking from "./Booking";
 
-export default Booking
+export default Booking;

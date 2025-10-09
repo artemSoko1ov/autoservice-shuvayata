@@ -17,7 +17,7 @@ const Hero = (props) => {
               российских авто. Быстро, качественно, надёжно.
             </p>
           </div>
-          <div className="hero__link">
+          <div className="hero__active">
             <Button />
           </div>
         </div>

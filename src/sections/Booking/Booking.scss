@@ -1,0 +1,43 @@
+.booking {
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: fluid(100, 30);
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(50, 30);
+  }
+
+  &__slider {
+    width: 583px;
+    height: 349px;
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+    flex: 0 0 auto;
+
+    @include tablet {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+}

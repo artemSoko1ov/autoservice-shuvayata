@@ -1,5 +1,7 @@
 import Hero from "../../sections/Hero";
 import Services from "../../sections/Services";
+import Booking from "../../sections/Booking";
+import React from "react";
 
 const Content = (props) => {
   const {} = props;
@@ -7,6 +9,7 @@ const Content = (props) => {
     <main className="content">
       <Hero />
       <Services />
+      <Booking />
     </main>
   );
 };

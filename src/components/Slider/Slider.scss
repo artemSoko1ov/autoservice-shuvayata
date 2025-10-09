@@ -1,0 +1,19 @@
+.slider {
+  padding-top: fluid(30, 20);
+
+  .swiper {
+    width: 100%;
+    height: fluid(600, 480);
+    column-gap: fluid(140, 50);
+
+    &-wrapper {
+      align-items: stretch;
+    }
+
+    &-slide {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+  }
+}

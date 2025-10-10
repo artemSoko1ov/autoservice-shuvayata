@@ -1,0 +1,70 @@
+.modal {
+  position: relative;
+  background: var(--color-dark);
+  border-radius: var(--border-radius-l);
+  padding: fluid(40, 25);
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: modalFade 0.25s ease;
+
+  @media (max-height: 600px) {
+    & {
+      top: 160px;
+      overflow-y: auto;
+    }
+  }
+
+  &-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(3px);
+
+    @media (max-height: 600px) {
+      & {
+        overflow-y: auto;
+      }
+    }
+  }
+
+  @keyframes modalFade {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 22px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: var(--transition-duration);
+
+    &:hover {
+      color: var(--color-gray);
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    @include fluid-text(26, 22);
+
+    text-align: center;
+  }
+}

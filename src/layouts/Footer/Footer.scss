@@ -1,11 +1,11 @@
 .footer {
   padding-block: fluid(150, 75) 24px;
 
-   &__inner {
-     display: flex;
-     flex-direction: column;
-     gap: fluid(130, 50);
-   }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid(130, 50);
+  }
 
   &__top {
     display: flex;

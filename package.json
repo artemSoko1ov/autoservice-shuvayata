@@ -41,6 +41,7 @@
     "svgr": "^1.10.0",
     "swiper": "^12.0.2",
     "vite": "^7.1.7",
-    "vite-plugin-svgr": "^4.5.0"
+    "vite-plugin-svgr": "^4.5.0",
+    "zustand": "^5.0.8"
   }
 }

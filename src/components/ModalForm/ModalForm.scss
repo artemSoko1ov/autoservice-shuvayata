@@ -1,0 +1,78 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__success {
+    font-size: 16px;
+    color: var(--color-green);
+  }
+
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 13px;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Inputs */
+  &__input,
+  &__textarea,
+  select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ef;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s,
+    box-shadow 0.15s;
+  }
+
+  &__input:focus,
+  &__textarea:focus,
+  select:focus {
+    border-color: var(--color-orange);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__textarea {
+    min-height: 94px;
+    resize: vertical;
+  }
+
+  &__required {
+    color: #e11d48;
+    margin-left: 4px;
+  }
+
+  /* Ошибки */
+  &__error {
+    color: #b91c1c;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  &__error_submit {
+    margin-top: 6px;
+  }
+
+  /* Кнопки формы — небольшие модификаторы */
+  &__submit {
+    @include fluid-text(18, 16);
+
+    background-color: var(--color-orange);
+    padding: fluid(15, 10) fluid(40, 30);
+    border: none;
+    border-radius: var(--border-radius-l);
+    color: var(--color-white);
+    text-decoration: none;
+    flex: 0 0 auto;
+  }
+}

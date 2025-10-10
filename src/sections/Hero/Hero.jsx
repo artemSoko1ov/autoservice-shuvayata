@@ -1,8 +1,10 @@
 import "./Hero.scss";
 import Button from "../../components/Button";
+import { useModalStore } from "../../store/modalStore.jsx";
 
 const Hero = (props) => {
   const {} = props;
+  const { openModal } = useModalStore();
   return (
     <section className="hero">
       <div className="hero__inner container">
@@ -18,7 +20,7 @@ const Hero = (props) => {
             </p>
           </div>
           <div className="hero__active">
-            <Button />
+            <Button onClick={openModal} />
           </div>
         </div>
       </div>

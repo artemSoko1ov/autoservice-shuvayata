@@ -5,13 +5,14 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import React from "react";
-
 import image1 from "@/assets/images/image-1.jpg";
 import image2 from "@/assets/images/image-2.jpg";
 import image3 from "@/assets/images/image-3.jpg";
+import { useModalStore } from "../../store/modalStore.jsx";
 
 const Booking = () => {
   const imagesSlider = [image1, image2, image3];
+  const { openModal } = useModalStore();
 
   return (
     <Section className="booking" title="Запишитесь прямо сейчас">
@@ -26,7 +27,7 @@ const Booking = () => {
         </p>
 
         <div className="booking__active">
-          <Button />
+          <Button onClick={openModal} />
         </div>
       </div>
 

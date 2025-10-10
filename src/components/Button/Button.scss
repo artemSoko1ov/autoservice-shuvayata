@@ -3,8 +3,14 @@
 
   background-color: var(--color-orange);
   padding: fluid(15, 10) fluid(40, 30);
+  border: none;
   border-radius: var(--border-radius-l);
   color: var(--color-white);
   text-decoration: none;
   flex: 0 0 auto;
+
+  &:active {
+    border-color: var(--color-orange);
+    box-shadow: var(--box-shadow);
+  }
 }

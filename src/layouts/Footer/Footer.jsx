@@ -10,10 +10,7 @@ const Footer = (props) => {
     <footer className="footer">
       <div className="footer__inner container">
         <div className="footer__top">
-          <a
-            href="/"
-            className="footer__logo"
-          >
+          <a href="/" className="footer__logo">
             <Logo />
           </a>
 

@@ -8,7 +8,6 @@
     color: var(--color-green);
   }
 
-
   &__row {
     display: flex;
     flex-direction: column;
@@ -31,8 +30,9 @@
     border: 1px solid #e6e9ef;
     font-size: 15px;
     outline: none;
-    transition: border-color 0.15s,
-    box-shadow 0.15s;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
   }
 
   &__input:focus,

@@ -4,7 +4,7 @@ import path from "path";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
-  base: '/autoservice-shuvayata/',
+  base: "/autoservice-shuvayata/",
   plugins: [react(), svgr()],
   resolve: {
     alias: {

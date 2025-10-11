@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ModalForm.scss";
+import emailjs from "emailjs-com";
 
 const carData = {
   ВАЗ: [
@@ -155,15 +156,31 @@ function ModalForm({ onSuccess }) {
     if (!validate()) return;
 
     setSubmitting(true);
+
     try {
-      await new Promise((r) => setTimeout(r, 1200)); // эмуляция отправки
+      const templateParams = {
+        phone: form.phone,
+        brand: form.brand,
+        model: form.model,
+        year: form.year,
+        message: form.message,
+      };
+
+      await emailjs.send(
+        "service_9pxpakm", // ID сервиса
+        "template_pihz0hc", // ID шаблона
+        templateParams,
+        "roTrgw_99O7yGZQ_1", // Публичный ключ (API key)
+      );
+
       setSuccess(true);
       setForm(initial);
       setTimeout(() => {
         setSuccess(false);
         onSuccess && onSuccess();
       }, 1200);
-    } catch {
+    } catch (error) {
+      console.error("Ошибка отправки:", error);
       setErrors({ submit: "Ошибка отправки. Попробуйте ещё раз." });
     } finally {
       setSubmitting(false);

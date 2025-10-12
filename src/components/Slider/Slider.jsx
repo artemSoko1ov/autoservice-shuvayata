@@ -2,7 +2,7 @@ import React from "react";
 import "./Slider.scss";
 import CardSlider from "../CardSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules"; // важно
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 import Icon1 from "@/assets/icons/IconsCards/icon-1.svg?react";
@@ -17,6 +17,11 @@ const dateCards = [
     icon: <Icon1 />,
     title: "КАМАЗ, МАЗ, ВАЗ, ГАЗ — всё под ключ",
     description: "Работаем с отечественным автопромом любого года.",
+  },
+  {
+    icon: <Icon6 />,
+    title: "Шиномонтаж и балансировка",
+    description: "Смена сезонных шин, балансировка колёс и ремонт бескамерных покрышек — быстро и аккуратно.",
   },
   {
     icon: <Icon2 />,
@@ -39,11 +44,6 @@ const dateCards = [
     title: "Автозвук и мультимедиа",
     description:
       "Установка акустики, сабвуферов, мультимедиа и шумоизоляция салона.",
-  },
-  {
-    icon: <Icon6 />,
-    title: "Empty",
-    description: "Empty",
   },
 ];
 

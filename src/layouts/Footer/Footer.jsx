@@ -21,15 +21,15 @@ const Footer = (props) => {
             <h2 className="h4">Контакты</h2>
             <ul className="footer__contacts-list">
               <li className="footer__contacts-element">
-                <a href="https://yandex.ru/maps/-/CLRjrUoH">
+                <a href="https://yandex.ru/maps/-/CLRjrUoH" target="_blank">
                   Пермский край, <br/>д. Шуваята,  ул. Речная, 11
                 </a>
               </li>
               <li className="footer__contacts-element">
-                <a href="tel:+79958606236">+7 (995) 860-62-36</a>
+                <a href="tel:+79958606236" target="_blank">+7 (995) 860-62-36</a>
               </li>
               <li className="footer__contacts-element">
-                <a href="mailto:info@shuvayata.ru">info@shuvayata.ru</a>
+                <a href="mailto:shuvayata59@yandex.ru" target="_blank">shuvayata59@yandex.ru</a>
               </li>
               <li className="footer__contacts-element">Пн–Сб: 9:00–19:00</li>
             </ul>
@@ -39,19 +39,19 @@ const Footer = (props) => {
             <h2 className="h4">Соцсети</h2>
             <ul className="footer__contacts-list">
               <li className="footer__contacts-element">
-                <a href="#">
+                <a href="https://t.me/pilot_am" target="_blank">
                   <Telegram />
                   <p>Telegram</p>
                 </a>
               </li>
               <li className="footer__contacts-element">
-                <a href="#">
+                <a href="https://vk.com/vazilla777" target="_blank">
                   <Vkontakte />
                   <p>VK</p>
                 </a>
               </li>
               <li className="footer__contacts-element">
-                <a href="#">
+                <a href="https://wa.me/79958606236" target="_blank">
                   <WhatsApp />
                   <p>WhatsApp</p>
                 </a>

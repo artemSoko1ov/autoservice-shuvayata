@@ -4,7 +4,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: fluid(130, 50);
+    gap: fluid(100, 50);
   }
 
   &__top {
@@ -37,7 +37,7 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 12px;
     }
 
     &-element {

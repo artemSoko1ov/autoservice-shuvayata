@@ -10,7 +10,10 @@ const Footer = (props) => {
     <footer className="footer">
       <div className="footer__inner container">
         <div className="footer__top">
-          <a href="/" className="footer__logo">
+          <a
+            href="/"
+            className="footer__logo"
+          >
             <Logo />
           </a>
 
@@ -18,10 +21,16 @@ const Footer = (props) => {
             <h2 className="h4">Контакты</h2>
             <ul className="footer__contacts-list">
               <li className="footer__contacts-element">
-                г. Пермь, ул. Ленина, дом 7
+                <a href="https://yandex.ru/maps/-/CLRjrUoH">
+                  Пермский край, <br/>д. Шуваята,  ул. Речная, 11
+                </a>
               </li>
-              <li className="footer__contacts-element">+7 (999) 999-99-99</li>
-              <li className="footer__contacts-element">info@shuvayata.ru</li>
+              <li className="footer__contacts-element">
+                <a href="tel:+79958606236">+7 (995) 860-62-36</a>
+              </li>
+              <li className="footer__contacts-element">
+                <a href="mailto:info@shuvayata.ru">info@shuvayata.ru</a>
+              </li>
               <li className="footer__contacts-element">Пн–Сб: 9:00–19:00</li>
             </ul>
           </div>

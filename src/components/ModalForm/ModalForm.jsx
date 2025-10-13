@@ -167,10 +167,10 @@ function ModalForm({ onSuccess }) {
       };
 
       await emailjs.send(
-        "service_9pxpakm", // ID сервиса
-        "template_pihz0hc", // ID шаблона
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         templateParams,
-        "roTrgw_99O7yGZQ_1", // Публичный ключ (API key)
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setSuccess(true);

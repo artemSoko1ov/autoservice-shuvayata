@@ -1,19 +1,18 @@
 import postcssPxToRem from "postcss-pxtorem";
+import postcssPresetEnv from "postcss-preset-env";
 
-export default ({ env }) => {
-  const isProd = env === "production";
-  const plugins = [];
-
-  if (isProd) {
-    plugins.push(
-      postcssPxToRem({
-        propList: ["*"],
-        mediaQuery: true,
-      }),
-    );
-  }
-
-  return {
-    plugins,
-  };
+export default {
+  plugins: [
+    postcssPxToRem({
+      propList: ["*"],
+      mediaQuery: true,
+      rootValue: 16,
+    }),
+    postcssPresetEnv({
+      stage: 3,
+      features: {
+        "nesting-rules": true,
+      },
+    }),
+  ],
 };

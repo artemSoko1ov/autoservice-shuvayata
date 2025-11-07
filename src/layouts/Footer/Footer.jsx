@@ -29,7 +29,7 @@ const Footer = (props) => {
                 <a href="tel:+79958606236" target="_blank">+7 (995) 860-62-36</a>
               </li>
               <li className="footer__contacts-element">
-                <a href="mailto:shuvayata59@yandex.ru" target="_blank">shuvayata59@yandex.ru</a>
+                <a href="mailto:autoservice@shuvayata.ru">autoservice@shuvayata.ru</a>
               </li>
               <li className="footer__contacts-element">Пн–Сб: 9:00–19:00</li>
             </ul>

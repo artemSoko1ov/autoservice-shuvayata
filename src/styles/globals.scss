@@ -29,7 +29,7 @@ main {
 
 h1,
 .h1 {
-  @include fluid-text(64, 28);
+  @include fluid-text(64, 34);
 
   font-weight: 800;
 }
@@ -77,5 +77,5 @@ svg * {
 }
 
 section {
-  border-bottom: var(--border-bottom);
+  border-bottom: var(--border);
 }

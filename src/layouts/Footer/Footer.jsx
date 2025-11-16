@@ -10,10 +10,7 @@ const Footer = (props) => {
     <footer className="footer">
       <div className="footer__inner container">
         <div className="footer__top">
-          <a
-            href="/"
-            className="footer__logo"
-          >
+          <a href="/" className="footer__logo">
             <Logo />
           </a>
 
@@ -22,11 +19,14 @@ const Footer = (props) => {
             <ul className="footer__contacts-list">
               <li className="footer__contacts-element">
                 <a href="https://yandex.ru/maps/-/CLRjrUoH" target="_blank">
-                  Пермский край, <br/>д. Шуваята,  ул. Речная, 11
+                  Пермский край, <br />
+                  д. Шуваята, ул. Речная, 11
                 </a>
               </li>
               <li className="footer__contacts-element">
-                <a href="tel:+79958606236" target="_blank">+7 (995) 860-62-36</a>
+                <a href="tel:+79958606236" target="_blank">
+                  +7 (995) 860-62-36
+                </a>
               </li>
               <li className="footer__contacts-element">
                 <a href="mailto:shuvayata59@yandex.ru">shuvayata59@yandex.ru</a>

@@ -1,3 +1,3 @@
-import PriceList from './PriceList'
+import PriceList from "./PriceList";
 
-export default PriceList
+export default PriceList;

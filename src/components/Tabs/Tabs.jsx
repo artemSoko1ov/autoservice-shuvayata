@@ -2,9 +2,10 @@ import "./Tabs.scss";
 import priceList from "@/components/Tabs/priceList.js";
 import { useState } from "react";
 import classNames from "classnames";
+import AccordionGroup from "@/components/AccordionGroup";
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState("ВАЗ");
 
   return (
     <div className="tabs">
@@ -26,7 +27,9 @@ const Tabs = () => {
           </div>
         ))}
       </div>
-      <div className="tabs__body"></div>
+      <div className="tabs__body">
+        <AccordionGroup categories={priceList[activeTab]} />
+      </div>
     </div>
   );
 };

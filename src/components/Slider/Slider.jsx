@@ -57,7 +57,6 @@ const Slider = () => {
         slidesPerView={3}
         slidesPerGroup={1}
         loop={true}
-        loopFillGroupWithBlank={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

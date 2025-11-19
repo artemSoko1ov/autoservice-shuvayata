@@ -1,15 +1,18 @@
 import "./Accordion.scss";
-import { useState } from "react";
+import classNames from "classnames";
+import React from "react";
 
 const Accordion = (props) => {
-  const { categoryName, services } = props;
-  const [open, setOpen] = useState(false);
+  const { categoryName, services, isOpen, onToggle } = props;
 
   return (
-    <div className={`accordion ${open ? "active" : ""}`}>
-      <h2 className="accordion__title h3" onClick={() => setOpen(!open)}>
-        {categoryName}
-      </h2>
+    <div
+      className={classNames("accordion", {
+        active: isOpen,
+      })}
+      onClick={onToggle}
+    >
+      <h2 className="accordion__title h3">{categoryName}</h2>
 
       <div className="accordion__content">
         <table>
@@ -27,4 +30,4 @@ const Accordion = (props) => {
   );
 };
 
-export default Accordion;
+export default React.memo(Accordion);

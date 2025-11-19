@@ -12,7 +12,7 @@ const AccordionGroup = (props) => {
   useEffect(() => {
     const loadCategories = async () => {
       try {
-        const res = await fetch(`prices/${brand}/_categories.json`);
+        const res = await fetch(`${import.meta.env.BASE_URL}prices/${brand}/_categories.json`);
         if (!res.ok) throw new Error("Ошибка загрузки");
         const data = await res.json();
         setCategories(data);
@@ -35,7 +35,7 @@ const AccordionGroup = (props) => {
     }
 
     if (!services[category]) {
-      const res = await fetch(`/prices/${brand}/${category}.json`);
+      const res = await fetch(`${import.meta.env.BASE_URL}/prices/${brand}/${category}.json`);
       const data = await res.json();
       setServices((prev) => ({ ...prev, [category]: data }));
     }

@@ -15,7 +15,7 @@ import Icon6 from "@/assets/icons/IconsCards/icon-6.svg?react";
 const dateCards = [
   {
     icon: <Icon1 />,
-    title: "КАМАЗ, МАЗ, ВАЗ, ГАЗ — всё под ключ",
+    title: "KAMAZ, MAZ, ВАЗ, ГАЗ — всё под ключ",
     description: "Работаем с отечественным автопромом любого года.",
   },
   {

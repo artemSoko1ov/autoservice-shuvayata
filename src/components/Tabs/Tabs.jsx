@@ -3,10 +3,11 @@ import { useState } from "react";
 import classNames from "classnames";
 import AccordionGroup from "@/components/AccordionGroup";
 
-const brands = ["ВАЗ", "ГАЗ", "УАЗ", "KAMAZ", "MAZ"];
+// const brands = ["ВАЗ", "ГАЗ", "УАЗ", "KAMAZ", "MAZ"];
+const brands = ["ГАЗ"];
 
 const Tabs = () => {
-  const [activeBrand, setActiveBrand] = useState("ВАЗ");
+  const [activeBrand, setActiveBrand] = useState("ГАЗ");
 
   return (
     <div className="tabs">

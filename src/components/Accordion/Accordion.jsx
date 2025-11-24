@@ -15,12 +15,12 @@ const Accordion = (props) => {
       <h2 className="accordion__title h3">{categoryName}</h2>
 
       <div className="accordion__content">
-        <table>
+        <table className="accordion__table">
           <tbody>
             {services.map(({ id, name, price }) => (
-              <tr key={id}>
-                <td>{name}</td>
-                <td>{price}</td>
+              <tr className="accordion__table-tr" key={id}>
+                <td className="accordion__table-td">{name}</td>
+                <td className="accordion__table-td">{price}</td>
               </tr>
             ))}
           </tbody>
